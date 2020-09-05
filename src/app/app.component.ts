@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'testapp';
+  public titleClass = 'red';
+  appTitle = 'Angular todo application';
+  constructor () {
+    setTimeout(() => {
+      this.titleClass = 'blue';
+
+      setTimeout(() => {
+        this.titleClass = 'yellow';
+      }, 2000);
+    }, 2000);
+  }
 }
