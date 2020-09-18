@@ -34,5 +34,6 @@ export class TodosService {
 
   addTodo(todo: Todo): void {
     this.todos.push(todo);
+    console.log(this.todos);
   }
 }
