@@ -9,6 +9,7 @@ import {delay} from 'rxjs/operators';
 })
 export class TodosComponent implements OnInit {
   public loading = true;
+  private searchString = '';
   constructor(public todosService: TodosService) {
 }
 
